@@ -1,0 +1,30 @@
+.impressum-main {
+  padding-top: 6rem;
+  padding-left: 8.5rem;
+  padding-right: 8.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  .impressum-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    .contact-data {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+
+      a {
+        color: #222;
+        text-decoration: none;
+        width: fit-content;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

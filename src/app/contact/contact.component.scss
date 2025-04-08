@@ -1,0 +1,55 @@
+.contact-main {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  padding-top: 96px;
+  padding-left: 136px;
+
+  .contact-data {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    .address {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      h3 {
+        font-weight: 600;
+      }
+    }
+
+    .call-mail-container {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      .phone-number,
+      .email {
+        display: flex;
+        gap: 5px;
+        align-items: center;
+
+        svg {
+          fill: #222;
+          width: 22px;
+          height: 22px;
+        }
+
+        a {
+          color: #222;
+          text-decoration: none;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+
+  .contact-closing-sentense {
+    font-size: 28px;
+    font-weight: 600;
+    color: #2e4952;
+  }
+}

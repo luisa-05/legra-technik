@@ -1,0 +1,87 @@
+@use "sass:color";
+
+.about-us-main {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  padding-top: 6rem;
+
+  h1 {
+    padding-left: 8.5rem;
+  }
+
+  section {
+    padding: 3rem 5rem;
+    margin: 0 3.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    &:hover {
+      transform: translateY(-0.3rem);
+      transition: all 0.3s;
+    }
+
+    a {
+      color: #2e4952;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    span {
+      font-weight: 600;
+    }
+
+    h2 {
+      margin-bottom: 0.7rem;
+    }
+  }
+
+  .introduction {
+    border-top: 3px solid #2e4952;
+    border-bottom: 3px solid #2e4952;
+  }
+
+  .short-presentation {
+    // background-color: #f3f3f3;
+    background-color: color.adjust(#2e4952, $lightness: 5%);
+    color: #fff;
+    margin: 0;
+    padding: 3rem 8.5rem;
+  }
+
+  .qualifications {
+    padding-top: 0;
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      padding-left: 3rem;
+
+      li {
+        // border-radius: 2rem;
+        border-left: 4px solid #2e4952;
+        // border-right: 4px solid $primary-color;
+        list-style-type: none;
+        padding: 10px 30px;
+        padding-right: 0;
+      }
+    }
+  }
+
+  .motivation {
+    border-left: 4px solid #2e4952;
+    border-right: 4px solid #2e4952;
+    margin: 0 8.5rem;
+    padding: 1rem 2.5rem;
+  }
+
+  .closing-sentence {
+    padding-left: 8.5rem;
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: #2e4952;
+  }
+}
