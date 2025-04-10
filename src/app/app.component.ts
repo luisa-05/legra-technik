@@ -4,8 +4,10 @@ import {
   RouterOutlet,
   RouterLinkActive,
   Router,
+  NavigationEnd,
 } from '@angular/router';
 import { CommonModule } from '@angular/common';
+import { filter } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -15,6 +17,14 @@ import { CommonModule } from '@angular/common';
 })
 export class AppComponent {
   constructor(private router: Router) {}
+
+  ngOnInit(): void {
+    this.router.events
+      .pipe(filter((event) => event instanceof NavigationEnd))
+      .subscribe(() => {
+        window.scrollTo({ top: 0, behavior: 'smooth' }); // smooth oder 'auto'
+      });
+  }
 
   isHomeRouteActive(): boolean {
     return this.router.url === '/'; // exakt
