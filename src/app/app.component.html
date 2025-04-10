@@ -4,13 +4,16 @@
       <a [routerLink]="['/']">
         <img
           class="nav__logo"
-          src="logo-transparent-png.png"
+          src="logo-transparent-png.webp"
           alt="logo Legra Technik GBR"
         />
       </a>
 
       <ul class="nav__link-container">
-        <li class="main-point">
+        <li
+          class="main-point"
+          [ngClass]="{ 'active-main-point': isHomeRouteActive() }"
+        >
           <a
             [routerLink]="['/']"
             routerLinkActive="active-link"
@@ -18,7 +21,10 @@
             >Home</a
           >
         </li>
-        <li class="main-point">
+        <li
+          class="main-point"
+          [ngClass]="{ 'active-main-point': isAboutUsRouteActive() }"
+        >
           <a
             [routerLink]="['/about-us']"
             routerLinkActive="active-link"
@@ -58,7 +64,10 @@
             <li><a href="#">Wiederholungsprüfung</a></li>
           </ul>
         </li>
-        <li class="main-point">
+        <li
+          class="main-point"
+          [ngClass]="{ 'active-main-point': isContactRouteActive() }"
+        >
           <a
             [routerLink]="['/contact']"
             routerLinkActive="active-link"
@@ -74,24 +83,9 @@
   </main>
   <footer class="footer">
     <div class="footer__links">
-      <a
-        [routerLink]="['/contact']"
-        routerLinkActive="active-link"
-        [routerLinkActiveOptions]="{ exact: true }"
-        >Kontakt</a
-      >
-      <a
-        [routerLink]="['/privacy-policy']"
-        routerLinkActive="active-link"
-        [routerLinkActiveOptions]="{ exact: true }"
-        >Datenschutzerklärung</a
-      >
-      <a
-        [routerLink]="['/impressum']"
-        routerLinkActive="active-link"
-        [routerLinkActiveOptions]="{ exact: true }"
-        >Impressum</a
-      >
+      <a [routerLink]="['/contact']">Kontakt</a>
+      <a [routerLink]="['/privacy-policy']">Datenschutzerklärung</a>
+      <a [routerLink]="['/impressum']">Impressum</a>
     </div>
     <hr />
     <p>© LEGRA-Technik GbR</p>

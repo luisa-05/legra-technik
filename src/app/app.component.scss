@@ -119,6 +119,11 @@ header {
           }
         }
       }
+
+      .active-main-point {
+        border-top: 3px solid #2e4952; //#51a9db
+        box-sizing: content-box;
+      }
     }
   }
 }
@@ -136,9 +141,6 @@ main {
   p {
     line-height: 32px;
   }
-}
-
-.active-link {
 }
 
 .footer {
