@@ -71,3 +71,24 @@
     }
   }
 }
+
+@media (max-width: 850px) {
+  .privacy-policy-main {
+    padding-left: 30px;
+    padding-right: 30px;
+
+    ol {
+      padding-left: 30px;
+
+      .main-point {
+        .ul-main-point {
+          .li-underpoint {
+            ul {
+              padding-left: 30px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

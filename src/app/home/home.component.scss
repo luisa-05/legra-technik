@@ -32,6 +32,7 @@
 }
 
 .msg-in-progress {
+  text-align: center;
   position: fixed;
   bottom: 1rem;
   left: 50%;
@@ -47,3 +48,10 @@
 // section {
 //   padding: 50px;
 // }
+
+@media (max-width: 850px) {
+  .msg-in-progress {
+    padding: 5px 10px;
+    font-size: 20px;
+  }
+}

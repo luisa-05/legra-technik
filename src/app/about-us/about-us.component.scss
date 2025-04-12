@@ -85,3 +85,33 @@
     color: #2e4952;
   }
 }
+
+@media (max-width: 850px) {
+  .about-us-main {
+    h1,
+    .closing-sentence {
+      padding: 0 30px;
+    }
+
+    section {
+      margin: 0 30px;
+      padding: 48px 0;
+    }
+
+    .short-presentation {
+      padding: 48px 30px;
+    }
+
+    .qualifications {
+      ul {
+        padding-left: 20px;
+      }
+    }
+
+    .motivation {
+      border: none;
+      padding: 48px 30px;
+      margin: 0;
+    }
+  }
+}

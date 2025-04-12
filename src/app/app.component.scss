@@ -186,4 +186,13 @@ main {
       display: inline-block;
     }
   }
+
+  .footer {
+    padding: 30px 30px;
+    font-size: 14px;
+
+    .footer__links {
+      gap: 20px;
+    }
+  }
 }
