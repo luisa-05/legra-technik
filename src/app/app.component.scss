@@ -125,6 +125,12 @@ header {
         box-sizing: content-box;
       }
     }
+
+    &__burger-menu {
+      display: none;
+      fill: #222;
+      width: 30px;
+    }
   }
 }
 
@@ -166,6 +172,18 @@ main {
         text-decoration: underline;
         transition: all 0.3s;
       }
+    }
+  }
+}
+
+@media (max-width: 850px) {
+  .nav {
+    .nav__link-container {
+      display: none;
+    }
+
+    .nav__burger-menu {
+      display: inline-block;
     }
   }
 }

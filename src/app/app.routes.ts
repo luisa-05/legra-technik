@@ -4,6 +4,7 @@ import { ContactComponent } from './contact/contact.component';
 import { ImpressumComponent } from './impressum/impressum.component';
 import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 import { AboutUsComponent } from './about-us/about-us.component';
+import { NavModalComponent } from './nav-modal/nav-modal.component';
 
 export const routes: Routes = [
   {
@@ -30,6 +31,10 @@ export const routes: Routes = [
     path: 'about-us',
     component: AboutUsComponent,
     title: 'LEGRA-Technik GBR | Über Uns',
+  },
+  {
+    path: 'nav-modal',
+    component: NavModalComponent,
   },
   // { path: '**', component: PageNotFoundComponent }
 ];

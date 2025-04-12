@@ -1,0 +1,49 @@
+.nav-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+  //   background-color: rgba(255, 255, 255, 0.9); // halbtransparent
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+
+  li {
+    list-style-type: none;
+    cursor: pointer;
+    padding: 10px 20px;
+
+    a {
+      text-decoration: none;
+      color: #222;
+      font-weight: normal;
+      text-transform: uppercase;
+    }
+
+    &:hover {
+      background-color: #2e4952;
+      transition: all 0.3ms;
+
+      a {
+        transition: all 0.3ms;
+        color: #fff;
+      }
+    }
+
+    .disabled {
+      pointer-events: none;
+      color: gray;
+    }
+  }
+
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 30px;
+    cursor: pointer;
+  }
+}
