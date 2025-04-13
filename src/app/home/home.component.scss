@@ -13,7 +13,7 @@
   .headline-text {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 20px;
     position: absolute;
     top: 50%;
     left: 5%;
@@ -50,8 +50,23 @@
 // }
 
 @media (max-width: 850px) {
+  .hero {
+    .headline-text {
+      h1 {
+        font-size: 44px;
+      }
+
+      h2 {
+        font-size: 24px;
+      }
+    }
+  }
+
   .msg-in-progress {
     padding: 5px 10px;
     font-size: 20px;
+    left: 30px;
+    right: 30px;
+    transform: none;
   }
 }

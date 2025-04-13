@@ -10,27 +10,27 @@ export const routes: Routes = [
   {
     path: '',
     component: HomeComponent,
-    title: 'LEGRA-Technik GBR',
+    title: 'LEGRA-Technik',
   },
   {
     path: 'contact',
     component: ContactComponent,
-    title: 'LEGRA-Technik GBR | Kontakt',
+    title: 'LEGRA-Technik | Kontakt',
   },
   {
     path: 'impressum',
     component: ImpressumComponent,
-    title: 'LEGRA-Technik GBR | Impressum',
+    title: 'LEGRA-Technik | Impressum',
   },
   {
     path: 'privacy-policy',
     component: PrivacyPolicyComponent,
-    title: 'LEGRA-Technik GBR | Datenschutzerklärung',
+    title: 'LEGRA-Technik | Datenschutzerklärung',
   },
   {
     path: 'about-us',
     component: AboutUsComponent,
-    title: 'LEGRA-Technik GBR | Über Uns',
+    title: 'LEGRA-Technik | Über Uns',
   },
   {
     path: 'nav-modal',

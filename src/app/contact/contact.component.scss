@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   gap: 64px;
-  padding-top: 96px;
+  padding-top: 6rem;
   padding-left: 136px;
 
   .contact-data {
@@ -56,6 +56,18 @@
 
 @media (max-width: 850px) {
   .contact-main {
+    padding-top: 4rem;
     padding-left: 30px;
+
+    .contact-data {
+      .address {
+        gap: 2px;
+      }
+    }
+
+    .contact-closing-sentense {
+      padding-right: 30px;
+      font-size: 1.4rem;
+    }
   }
 }

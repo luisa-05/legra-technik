@@ -52,6 +52,7 @@
   }
 
   .qualifications {
+    padding-bottom: 0;
     padding-top: 0;
 
     ul {
@@ -75,7 +76,7 @@
     border-left: 4px solid #2e4952;
     border-right: 4px solid #2e4952;
     margin: 0 8.5rem;
-    padding: 1rem 2.5rem;
+    padding: 0 2.5rem;
   }
 
   .closing-sentence {
@@ -88,9 +89,16 @@
 
 @media (max-width: 850px) {
   .about-us-main {
-    h1,
+    padding-top: 4rem;
+    gap: 4rem;
+
+    h1 {
+      padding: 0 30px;
+    }
+
     .closing-sentence {
       padding: 0 30px;
+      font-size: 1.4rem;
     }
 
     section {
@@ -108,10 +116,20 @@
       }
     }
 
+    .philosophy {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+    }
+
     .motivation {
       border: none;
-      padding: 48px 30px;
+      padding: 0 30px;
       margin: 0;
+    }
+
+    .tradition {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
     }
   }
 }

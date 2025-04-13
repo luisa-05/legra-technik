@@ -138,15 +138,6 @@ main {
   flex: 1;
   padding-bottom: 112px;
   font-size: 22px;
-
-  h1 {
-    font-size: 80px;
-    // text-transform: uppercase;
-  }
-
-  p {
-    line-height: 32px;
-  }
 }
 
 .footer {
@@ -177,14 +168,25 @@ main {
 }
 
 @media (max-width: 850px) {
-  .nav {
-    .nav__link-container {
-      display: none;
-    }
+  header {
+    .nav {
+      height: 76px;
+      .nav__logo {
+        width: 60px;
+      }
 
-    .nav__burger-menu {
-      display: inline-block;
+      .nav__link-container {
+        display: none;
+      }
+
+      .nav__burger-menu {
+        display: inline-block;
+      }
     }
+  }
+
+  main {
+    font-size: 18px;
   }
 
   .footer {

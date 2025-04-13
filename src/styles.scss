@@ -43,9 +43,26 @@ body {
 
   h1 {
     font-size: 56px;
+    overflow-wrap: break-word;
   }
 
   p {
     line-height: 32px;
+  }
+}
+
+@media (max-width: 750px) {
+  body {
+    h1 {
+      font-size: 30px;
+    }
+
+    h2 {
+      font-size: 22px;
+    }
+
+    p {
+      line-height: 26px;
+    }
   }
 }
