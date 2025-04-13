@@ -11,6 +11,7 @@
   }
 
   .headline-text {
+    padding-right: 30px;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -64,7 +65,7 @@
 
   .msg-in-progress {
     padding: 5px 10px;
-    font-size: 20px;
+    font-size: 18px;
     left: 30px;
     right: 30px;
     transform: none;
