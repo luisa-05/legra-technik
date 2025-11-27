@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterLink, Router } from '@angular/router';
-import { NavigationService } from '../navigation.service';
+import { NavigationService } from '../../services/navigation.service';
 
 @Component({
   selector: 'app-nav-modal',

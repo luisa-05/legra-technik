@@ -1,10 +1,10 @@
 import { Routes } from '@angular/router';
-import { HomeComponent } from './home/home.component';
-import { ContactComponent } from './contact/contact.component';
-import { ImpressumComponent } from './impressum/impressum.component';
-import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
-import { AboutUsComponent } from './about-us/about-us.component';
-import { NavModalComponent } from './nav-modal/nav-modal.component';
+import { HomeComponent } from './components/home/home.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { ImpressumComponent } from './components/impressum/impressum.component';
+import { PrivacyPolicyComponent } from './components/privacy-policy/privacy-policy.component';
+import { AboutUsComponent } from './components/about-us/about-us.component';
+import { NavModalComponent } from './components/nav-modal/nav-modal.component';
 
 export const routes: Routes = [
   {

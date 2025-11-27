@@ -1,3 +1,5 @@
+@use "scss/vars" as *;
+
 .main-container {
   min-height: 100vh;
   width: 100%;
@@ -22,7 +24,7 @@ header {
     background-color: #f0f0f0;
     border-top: 3px solid #ddd;
     border-bottom: 3px solid #ddd;
-    height: 96px;
+    height: $nav-height-desktop;
 
     &__logo {
       width: 80px;
@@ -170,7 +172,7 @@ main {
 @media (max-width: 850px) {
   header {
     .nav {
-      height: 76px;
+      height: $nav-height-mobile;
       .nav__logo {
         width: 60px;
       }
