@@ -10,71 +10,67 @@
       </a>
 
       <ul class="nav__link-container">
-        <li
+        <a
+          [routerLink]="['/']"
+          routerLinkActive="active-link"
+          [routerLinkActiveOptions]="{ exact: true }"
           class="main-point"
           [ngClass]="{ 'active-main-point': isHomeRouteActive() }"
         >
-          <a
-            [routerLink]="['/']"
-            routerLinkActive="active-link"
-            [routerLinkActiveOptions]="{ exact: true }"
-            >Home</a
-          >
-        </li>
-        <li
+          <li>Home</li>
+        </a>
+        <a
+          [routerLink]="['/about-us']"
+          routerLinkActive="active-link"
+          [routerLinkActiveOptions]="{ exact: true }"
           class="main-point"
           [ngClass]="{ 'active-main-point': isAboutUsRouteActive() }"
         >
-          <a
-            [routerLink]="['/about-us']"
-            routerLinkActive="active-link"
-            [routerLinkActiveOptions]="{ exact: true }"
-            >Über uns</a
-          >
-        </li>
-        <li class="main-point nav-our-areas">
-          <a
-            href="#"
-            class="disabled"
-            routerLinkActive="active-link"
-            [routerLinkActiveOptions]="{ exact: true }"
-            >Unsere Bereiche</a
-          >
-          <ul class="dropdown">
-            <li><a href="#">Elektrotechnik</a></li>
-            <li><a href="#">Smarthome</a></li>
-            <li><a href="#">Klima & Kältetechnik</a></li>
-            <li><a href="#">SAT und Netzwerktechnik</a></li>
-          </ul>
-        </li>
-        <li class="main-point nav-services">
-          <a
-            href="#"
-            class="disabled"
-            routerLinkActive="active-link"
-            [routerLinkActiveOptions]="{ exact: true }"
-            >Dienstleistungen</a
-          >
-          <ul class="dropdown">
-            <li><a href="#">PV-Anlagen</a></li>
-            <li><a href="#">Elektrotechnische Messungen + Abnahmen</a></li>
-            <li><a href="#">Gutachten</a></li>
-            <li><a href="#">Niederspannungsverteilungen</a></li>
-            <li><a href="#">Not- und Ersatzstromkonzepte</a></li>
-            <li><a href="#">Wiederholungsprüfung</a></li>
-          </ul>
-        </li>
-        <li
+          <li>Über uns</li>
+        </a>
+        <a
+          href="#"
+          routerLinkActive="active-link"
+          [routerLinkActiveOptions]="{ exact: true }"
+          class="main-point disabled"
+        >
+          <li>
+            Unsere Bereiche
+            <ul class="dropdown">
+              <a href="#"><li>Elektrotechnik</li></a>
+              <a href="#"><li>Smarthome</li></a>
+              <a href="#"><li>Klima & Kältetechnik</li></a>
+              <a href="#"><li>SAT und Netzwerktechnik</li></a>
+            </ul>
+          </li>
+        </a>
+        <a
+          href="#"
+          routerLinkActive="active-link"
+          [routerLinkActiveOptions]="{ exact: true }"
+          class="main-point disabled"
+        >
+          <li>
+            Dienstleistungen
+            <ul class="dropdown">
+              <a href="#"><li>PV-Anlagen</li></a>
+              <a href="#"><li>Elektrotechnische Messungen + Abnahmen</li></a>
+              <a href="#"><li>Gutachten</li></a>
+              <a href="#"><li>Niederspannungsverteilungen</li></a>
+              <a href="#"><li>Not- und Ersatzstromkonzepte</li></a>
+              <a href="#"><li>Wiederholungsprüfung</li></a>
+            </ul>
+          </li>
+        </a>
+        <a
+          [routerLink]="['/contact']"
+          routerLinkActive="active-link"
+          [routerLinkActiveOptions]="{ exact: true }"
           class="main-point"
           [ngClass]="{ 'active-main-point': isContactRouteActive() }"
         >
-          <a
-            [routerLink]="['/contact']"
-            routerLinkActive="active-link"
-            [routerLinkActiveOptions]="{ exact: true }"
-            >Kontakt</a
-          >
-        </li>
+          <li>Kontakt</li>
+        </a>
       </ul>
 
       <a [routerLink]="['/nav-modal']">

@@ -1,4 +1,5 @@
 @use "sass:color";
+@use "../../scss/vars" as *;
 
 .about-us-main {
   display: flex;
@@ -23,7 +24,7 @@
     }
 
     a {
-      color: #2e4952;
+      color: $primary-color;
       text-decoration: none;
       &:hover {
         text-decoration: underline;
@@ -39,13 +40,13 @@
   }
 
   .introduction {
-    border-top: 3px solid #2e4952;
-    border-bottom: 3px solid #2e4952;
+    border-top: 3px solid $primary-color;
+    border-bottom: 3px solid $primary-color;
   }
 
   .short-presentation {
     // background-color: #f3f3f3;
-    background-color: color.adjust(#2e4952, $lightness: 5%);
+    background-color: color.adjust($primary-color, $lightness: 5%);
     color: #fff;
     margin: 0;
     padding: 3rem 8.5rem;
@@ -63,7 +64,7 @@
 
       li {
         // border-radius: 2rem;
-        border-left: 4px solid #2e4952;
+        border-left: 4px solid $primary-color;
         // border-right: 4px solid $primary-color;
         list-style-type: none;
         padding: 10px 30px;
@@ -73,8 +74,8 @@
   }
 
   .motivation {
-    border-left: 4px solid #2e4952;
-    border-right: 4px solid #2e4952;
+    border-left: 4px solid $primary-color;
+    border-right: 4px solid $primary-color;
     margin: 0 8.5rem;
     padding: 0 2.5rem;
   }
@@ -83,7 +84,7 @@
     padding-left: 8.5rem;
     font-size: 1.7rem;
     font-weight: 600;
-    color: #2e4952;
+    color: $primary-color;
   }
 }
 

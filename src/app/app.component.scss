@@ -5,10 +5,6 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-
-  .active-link {
-    color: #2e4952 !important;
-  }
 }
 
 header {
@@ -38,41 +34,50 @@ header {
       gap: 40px;
       height: 100%;
 
+      .active-link {
+        color: $primary-color !important;
+        background-color: $navLinkHoverBgColor;
+      }
+
       .main-point {
+        text-decoration: none;
         position: relative;
         display: flex;
         align-items: center;
         list-style-type: none;
-        padding: 0 10px;
+        padding: 0 20px;
         height: 100%;
         border-top: 3px solid transparent;
         border-bottom: 3px solid transparent;
+        color: #222;
 
-        a {
+        li {
           text-decoration: none;
-          color: #222;
           font-weight: 700;
           text-transform: uppercase;
 
           &:hover {
             transition: all 0.3ms;
-            color: #2e4952;
+            color: $primary-color;
           }
         }
 
         &:hover {
-          border-top: 3px solid #2e4952; //#51a9db
+          border-top: 3px solid $primary-color; //#51a9db
+          border-bottom: 3px solid #ddd;
           box-sizing: content-box;
+          background-color: $navLinkHoverBgColor;
+          color: $primary-color;
 
           // .dropdown {
           //   display: flex;
           // }
         }
+      }
 
-        .disabled {
-          pointer-events: none;
-          color: gray;
-        }
+      .disabled {
+        pointer-events: none;
+        color: grey;
       }
 
       .dropdown {
@@ -83,7 +88,7 @@ header {
         top: 100%;
         left: 0;
         z-index: 1000;
-        border-top: 3px solid #2e4952;
+        border-top: 3px solid $primary-color;
 
         li {
           list-style-type: none;
@@ -105,7 +110,7 @@ header {
           }
 
           &:hover {
-            background-color: #2e4952;
+            background-color: $primary-color;
             transition: all 0.3ms;
 
             a {
@@ -123,7 +128,8 @@ header {
       }
 
       .active-main-point {
-        border-top: 3px solid #2e4952; //#51a9db
+        border-top: 3px solid $primary-color; //#51a9db
+        border-bottom: 3px solid #ddd;
         box-sizing: content-box;
       }
     }
@@ -143,7 +149,7 @@ main {
 }
 
 .footer {
-  background-color: #444; // #2e4952
+  background-color: #444; // $primary-color
   color: #fff;
   padding: 40px 100px;
   display: flex;
